@@ -1,1 +1,1 @@
-# mg-padroniza
+# MG Padroniza

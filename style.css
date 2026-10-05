@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #094267;
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* LADO DA LOGO */
+
+.logo {
+    width: 20%;
+    background-color: #02243f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 80%;
+    max-width: 320px;
+}
+
+/* LADO DIREITO */
+
+.menu-direito {
+    width: 80%;
+    background-color: #02243f;
+    display: flex;
+    flex-direction: column;
+}
+
+/* MENU */
+
+nav {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 45px;
+    height: 100%;
+    padding-bottom: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+        height: 100px;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .menu-direito {
+        width: 100%;
+    }
+
+    nav {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a.ativo {
+    color: #E52B35;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.texto-banner {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+}
+
+.texto-banner h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.banner {
+    position: relative;
+}
+
+.texto-banner {
+    position: absolute;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.texto-banner {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+.texto-banner h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+}
