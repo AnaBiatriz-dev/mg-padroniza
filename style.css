@@ -184,3 +184,52 @@ nav a.ativo {
     font-size: 75px;
     font-weight: bold;
 }
+
+#servicos {
+    padding: 50px;
+}
+
+.titulo-servicos {
+    font-size: 35px;
+    text-align: center;
+}
+
+.mvv {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 10;
+}
+
+.card-mvv {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-mvv h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-mvv p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.mvv1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 10;
+}
+
+.card-mvv1 h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.card-mvv1 p {
+    text-align: justify;
+    font-size: 18px;
+}
